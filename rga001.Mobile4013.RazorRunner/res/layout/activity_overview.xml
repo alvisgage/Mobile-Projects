@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="rga001.mobile4013.razorrunner.OverviewActivity" 
+    android:background="#FFFFFFFF">
+
+    <TextView
+        android:id="@+id/text_cal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Large Text"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:background="#336699"/>
+
+    <Button
+        android:id="@+id/button_new_workout"
+        style="@style/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/new_workout" />
+
+    <LinearLayout
+        android:id="@+id/layout_workout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_cal"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/workoutListFragment"
+            android:name="rga001.mobile4013.razorrunner.workoutListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/border" />
+    </LinearLayout>
+
+</RelativeLayout>

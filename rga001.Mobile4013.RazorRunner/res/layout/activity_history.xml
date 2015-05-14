@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rga001.mobile4013.razorrunner.HistoryActivity" >
+
+
+        <TextView
+            android:id="@+id/lbl_name"
+            android:layout_width="fill_parent"
+       	 android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:background="#336699"/>
+
+        <TextView
+            android:id="@+id/text_his_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lbl_new_workout"
+            android:layout_alignParentRight="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <TextView
+            android:id="@+id/text_his_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignRight="@+id/text_his_dis"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/text_his_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignParentRight="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lbl_new_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbl_name"
+            android:layout_marginTop="20dp"
+            android:text="Date"
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:layout_marginTop="28dp"
+            android:text="Distance"
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginTop="32dp"
+            android:text="Calories Burned"
+            android:textSize="18sp" 
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_his_dur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TextView02"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lbl_new_workout"
+            android:layout_marginTop="28dp"
+            android:text="Duration"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+		<LinearLayout android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+   			 android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_his_back"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"   
+            android:layout_weight="1"          
+            android:layout_alignParentLeft="true"
+            android:text="Back" 
+            style="@style/green"/>
+        <Button
+            android:id="@+id/btn_his_del"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" 
+            style="@style/red"            
+        	android:layout_alignParentRight="true"/>
+
+        </LinearLayout>
+        
+
+</RelativeLayout>

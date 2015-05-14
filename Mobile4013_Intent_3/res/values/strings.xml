@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IntentExample</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_button_exp">Explicitly lauch an Activity</string>
+    <string name="activity_button_imp">Implicitly lauch an Activity</string>
+    <string name="title_activity_display">display activity</string>
+    
+    
+</resources>

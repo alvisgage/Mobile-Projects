@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rga001.mobile4013.razorrunner.WorkoutActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_workout_save"
+            style="@style/green"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/button_workout_cancel"
+            style="@style/red"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_new_workout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#336699"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="New Workout"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_workout_name"
+        android:layout_marginTop="16dp"
+        android:text="Duration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lbl1"
+        android:background="#808080"
+        android:gravity="center"
+        android:textSize="80sp" />
+
+    <TextView
+        android:id="@+id/text_his_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/timer"
+        android:text="Calories Burned"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/edit_workout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lbl_new_workout"
+        android:ems="10"
+        android:hint="Workout Name" />
+
+    <TextView
+        android:id="@+id/text_cal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_his_date"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="80sp"        
+        android:background="#808080" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_below="@+id/text_cal"
+        android:layout_marginTop="17dp" >
+
+	<TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/button_timer"
+        style="@style/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Start" 
+        android:gravity="center"/>
+    
+	<TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

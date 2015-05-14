@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RazorRunner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_workout">WorkoutActivity</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="new_workout">Start New Workout</string>
+    <string name="user">Gage Alvis</string>
+	<string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    
+</resources>

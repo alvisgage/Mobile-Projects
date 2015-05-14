@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:orientation="vertical" 
+    >
+
+    <TextView
+        android:id="@+id/rowName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:paddingLeft="5sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/rowDistance"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowName"
+        android:paddingTop="5sp"
+        android:paddingLeft="5sp"
+        android:textSize="12sp"
+       />
+</RelativeLayout>
